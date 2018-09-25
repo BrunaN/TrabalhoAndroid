@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_2e5516c48cc10798a56bf23265982607f3235018/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_3fcee8b1da5ca20bfda897463433f38e702496a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_751abc3b75d4bbae554d6ec715b13fd7bfdfb9b8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_9dc36d169943507f512b8ae3bbf8479e2aefc84e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_dba9638244e96e98f32aaca587b368b89f1363c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_9c5ed49e1d873ba1f39b4c49354a60e8a41a76cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_57b8794c305e16e4da0f4c19e64f609fb976c3b4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_b18559a9567eaef95db866db218d17d503ba4d4b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="df7236101b3b127357f80ba6b81ab2b04748b1b7">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_989f92c6cbc7dafb6ea8e8235c7075bc1072aed6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1bee2f22473f72ca7c1670b9cf15e54060986920">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f77664a1e22df3a90a0296fccf40dbeb3def1e60/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_847083584574ffcf4c454986d363ef5ccc03767f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_e01825d24afddcf3fd2d4de409da0883f2ad39d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_06835f4357cd44506727053d1bbcf53e54ea625f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_423b0ccca27f4c8482d1b386612fb36e210be584/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_d4c5ec0c652511da389495e8aaa6ae37c69f66fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_8ce1e857441eb0d247a71451e8523da8cec3a276/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_1e64b28d896efbaf486a007e468894619259c2e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_fba41cb28c45864e69c0d50d53651052d1d8be19/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/marcioefmaia/Dropbox/Quixada/Disciplinas/DesenvolvimentoDispositivosMoveis/20152/Lincoln/NotasAulaAndroid/FragmentsQuixada/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_55bd1c61591b69e995afcb33dd13c9b37a8e03f3/classes.dex" />
+    </item>
+
+</items>
