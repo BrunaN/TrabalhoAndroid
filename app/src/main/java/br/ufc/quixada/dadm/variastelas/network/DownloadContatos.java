@@ -36,7 +36,7 @@ public class DownloadContatos extends Thread{
         //Alterar sempre que for rodar em uma rede diferente
         //linux, mac: ifconfig
         //windows: ipconfig
-        String stringURL = "http://192.168.1.5:9000/get";
+        String stringURL = "http://192.168.25.10:9000/get";
 
         try {
 
@@ -65,6 +65,7 @@ public class DownloadContatos extends Thread{
                 @Override
                 public void run() {
                     activity.updateListaContatos( agenda );
+
                 }
             };
 
