@@ -6,5 +6,6 @@ public class Constants {
     public static int REQUEST_EDIT = 12;
     public static int RESULT_ADD = 21;
     public static int RESULT_CANCEL = 22;
+    public static String SERVER_PATH = "http://192.168.25.8:9000";
 
 }

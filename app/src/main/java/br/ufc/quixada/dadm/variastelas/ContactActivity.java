@@ -49,7 +49,6 @@ public class ContactActivity extends AppCompatActivity {
             edtEnd.setText( endereco );
 
             edit = true;
-
         }
 
     }

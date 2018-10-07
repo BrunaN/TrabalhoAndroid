@@ -2,7 +2,6 @@ package br.ufc.quixada.dadm.variastelas.network;
 
 import android.util.Log;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 
 import com.google.gson.Gson;
 
@@ -17,13 +16,13 @@ import br.ufc.quixada.dadm.variastelas.MainActivity;
 import br.ufc.quixada.dadm.variastelas.transactions.Agenda;
 import br.ufc.quixada.dadm.variastelas.transactions.Constants;
 
-public class DownloadContatos extends Thread{
+public class UpdateContatos extends Thread{
 
     MainActivity activity;
 
     ListView view;
 
-    public DownloadContatos( MainActivity activity, ListView view ){
+    public UpdateContatos(MainActivity activity, ListView view ){
         this.activity = activity;
         this.view = view;
     }
@@ -37,7 +36,7 @@ public class DownloadContatos extends Thread{
         //Alterar sempre que for rodar em uma rede diferente
         //linux, mac: ifconfig
         //windows: ipconfig
-        String stringURL = Constants.SERVER_PATH+"/get";
+        String stringURL = Constants.SERVER_PATH+"/edit";
 
         try {
 
@@ -56,7 +55,6 @@ public class DownloadContatos extends Thread{
                 response += inputLine;
 
             Log.d( "AndroidJSON", response );
-
 
             Gson gson = new Gson();
 

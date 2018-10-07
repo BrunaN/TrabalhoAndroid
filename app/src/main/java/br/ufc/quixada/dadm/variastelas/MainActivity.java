@@ -16,7 +16,10 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import br.ufc.quixada.dadm.variastelas.network.AddContatos;
+import br.ufc.quixada.dadm.variastelas.network.DeleteContatos;
 import br.ufc.quixada.dadm.variastelas.network.DownloadContatos;
+import br.ufc.quixada.dadm.variastelas.network.UpdateContatos;
 import br.ufc.quixada.dadm.variastelas.transactions.Agenda;
 import br.ufc.quixada.dadm.variastelas.transactions.Constants;
 import br.ufc.quixada.dadm.variastelas.transactions.Contato;
@@ -31,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar progressBar;
 
     DownloadContatos downloadContatos;
+    DeleteContatos deleteContatos;
+    UpdateContatos updateContatos;
+    AddContatos addContatos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
         //Baixar a lista de contatos do servidor
         downloadContatos = new DownloadContatos( this, listViewContatos );
         downloadContatos.start();
-
     }
 
     public void updateListaContatos( Agenda agenda ){
@@ -74,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         Contato[] lista = agenda.getListaTelefone();
         for( Contato c: lista ) listaContatos.add( c );
 
-        adapter.notifyDataSetChanged();;
+        adapter.notifyDataSetChanged();
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -107,11 +112,12 @@ public class MainActivity extends AppCompatActivity {
     private void apagarItemLista(){
 
         if( listaContatos.size() > 0 ){
-            listaContatos.remove( selected );
-            adapter.notifyDataSetChanged();;
+            deleteContatos = new DeleteContatos(this, listaContatos.get(selected));
+            deleteContatos.start();
         } else {
             selected = -1;
         }
+
 
     }
 

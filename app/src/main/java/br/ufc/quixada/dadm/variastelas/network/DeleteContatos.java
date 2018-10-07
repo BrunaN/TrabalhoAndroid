@@ -2,7 +2,6 @@ package br.ufc.quixada.dadm.variastelas.network;
 
 import android.util.Log;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 
 import com.google.gson.Gson;
 
@@ -16,16 +15,17 @@ import java.net.URL;
 import br.ufc.quixada.dadm.variastelas.MainActivity;
 import br.ufc.quixada.dadm.variastelas.transactions.Agenda;
 import br.ufc.quixada.dadm.variastelas.transactions.Constants;
+import br.ufc.quixada.dadm.variastelas.transactions.Contato;
 
-public class DownloadContatos extends Thread{
+public class DeleteContatos extends Thread{
 
     MainActivity activity;
 
-    ListView view;
+    Contato contato;
 
-    public DownloadContatos( MainActivity activity, ListView view ){
+    public DeleteContatos(MainActivity activity, Contato contato){
         this.activity = activity;
-        this.view = view;
+        this.contato = contato;
     }
 
     public void run(){
@@ -37,7 +37,7 @@ public class DownloadContatos extends Thread{
         //Alterar sempre que for rodar em uma rede diferente
         //linux, mac: ifconfig
         //windows: ipconfig
-        String stringURL = Constants.SERVER_PATH+"/get";
+        String stringURL = Constants.SERVER_PATH+"/remove?id="+contato.getId();
 
         try {
 
@@ -50,27 +50,12 @@ public class DownloadContatos extends Thread{
                     urlConnection.getInputStream()));
 
             String response = "";
-
             String inputLine;
+
             while ((inputLine = in.readLine()) != null)
                 response += inputLine;
 
             Log.d( "AndroidJSON", response );
-
-
-            Gson gson = new Gson();
-
-            final Agenda agenda = gson.fromJson( response, Agenda.class );
-
-            Runnable runnable = new Runnable() {
-                @Override
-                public void run() {
-                    activity.updateListaContatos( agenda );
-
-                }
-            };
-
-            view.post( runnable );
 
         } catch( MalformedURLException ex ){
            ex.printStackTrace();
