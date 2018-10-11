@@ -1,5 +1,7 @@
 package br.ufc.quixada.dadm.variastelas;
 
+import android.util.Log;
+
 import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -14,12 +16,16 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 
-import br.ufc.quixada.dadm.variastelas.network.AddContatos;
-import br.ufc.quixada.dadm.variastelas.network.DeleteContatos;
+
 import br.ufc.quixada.dadm.variastelas.network.DownloadContatos;
-import br.ufc.quixada.dadm.variastelas.network.UpdateContatos;
 import br.ufc.quixada.dadm.variastelas.transactions.Agenda;
 import br.ufc.quixada.dadm.variastelas.transactions.Constants;
 import br.ufc.quixada.dadm.variastelas.transactions.Contato;
@@ -34,9 +40,6 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar progressBar;
 
     DownloadContatos downloadContatos;
-    DeleteContatos deleteContatos;
-    UpdateContatos updateContatos;
-    AddContatos addContatos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,8 +115,46 @@ public class MainActivity extends AppCompatActivity {
     private void apagarItemLista(){
 
         if( listaContatos.size() > 0 ){
-            deleteContatos = new DeleteContatos(this, listaContatos.get(selected));
-            deleteContatos.start();
+            new Thread() {
+                public void run() {
+                    final Contato contato = listaContatos.get(selected);
+
+                    HttpURLConnection urlConnection = null;
+                    BufferedReader in = null;
+
+                    String stringURL = Constants.SERVER_PATH+"/remove?id="+contato.getId();
+                    try {
+                        URL url = new URL(stringURL);
+                        urlConnection = (HttpURLConnection) url.openConnection();
+
+                        urlConnection.setDoOutput(true);
+
+                        in = new BufferedReader(new InputStreamReader(
+                                urlConnection.getInputStream()));
+
+                        String response = "";
+                        String inputLine;
+
+                        while ((inputLine = in.readLine()) != null)
+                            response += inputLine;
+
+                        Log.d( "AndroidJSON", response );
+
+                        runOnUiThread(new Runnable() {
+
+                            @Override
+                            public void run() {
+                                listaContatos.remove(contato);
+                                adapter.notifyDataSetChanged();
+                            }
+                        });
+                    } catch( MalformedURLException ex ){
+                        ex.printStackTrace();
+                    } catch( IOException ex ){
+                        ex.printStackTrace();
+                    }
+                }
+            }.start();
         } else {
             selected = -1;
         }
@@ -147,33 +188,106 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
       if( requestCode == Constants.REQUEST_ADD && resultCode == Constants.RESULT_ADD ){
+          final String nome = ( String )data.getExtras().get( "nome" );
+          final String telefone = ( String )data.getExtras().get( "telefone" );
+          final String endereco = ( String )data.getExtras().get( "endereco" );
 
-          String nome = ( String )data.getExtras().get( "nome" );
-          String telefone = ( String )data.getExtras().get( "telefone" );
-          String endereco = ( String )data.getExtras().get( "endereco" );
+          new Thread() {
+              public void run() {
 
-          Contato contato = new Contato( nome, telefone, endereco );
+                  HttpURLConnection urlConnection = null;
+                  BufferedReader in = null;
 
-          listaContatos.add( contato );
-          adapter.notifyDataSetChanged();
+                  String stringURL = Constants.SERVER_PATH+"/add?nome="+nome+"&endereco="+endereco+"&telefone="+telefone;
+                  try {
+                      URL url = new URL(stringURL);
+                      urlConnection = (HttpURLConnection) url.openConnection();
 
+                      urlConnection.setDoOutput(true);
+
+                      in = new BufferedReader(new InputStreamReader(
+                              urlConnection.getInputStream()));
+
+                      String response = "";
+                      String inputLine;
+
+                      while ((inputLine = in.readLine()) != null)
+                          response += inputLine;
+
+                      Log.d( "AndroidJSON", response );
+
+                      runOnUiThread(new Runnable() {
+
+                          @Override
+                          public void run() {
+                              Contato contato = new Contato( nome, telefone, endereco );
+
+                              listaContatos.add( contato );
+                              adapter.notifyDataSetChanged();
+                          }
+                      });
+                  } catch( MalformedURLException ex ){
+                      ex.printStackTrace();
+                  } catch( IOException ex ){
+                      ex.printStackTrace();
+                  }
+              }
+          }.start();
       } else if( requestCode == Constants.REQUEST_EDIT && resultCode == Constants.RESULT_ADD ){
 
-          String nome = ( String )data.getExtras().get( "nome" );
-          String telefone = ( String )data.getExtras().get( "telefone" );
-          String endereco = ( String )data.getExtras().get( "endereco" );
-          int idEditar = (int)data.getExtras().get( "id" );
+          final int idEditar = (int)data.getExtras().get( "id" );
+          final String nome = ( String )data.getExtras().get( "nome" );
+          final String telefone = ( String )data.getExtras().get( "telefone" );
+          final String endereco = ( String )data.getExtras().get( "endereco" );
 
-          for( Contato contato: listaContatos ){
+          new Thread() {
+              public void run() {
 
-              if( contato.getId() == idEditar ){
-                  contato.setNome( nome );
-                  contato.setEndereco( endereco );
-                  contato.setTelefone( telefone );
+                  HttpURLConnection urlConnection = null;
+                  BufferedReader in = null;
+
+                  String stringURL = Constants.SERVER_PATH+"/edit?nome="+nome+"&endereco="+endereco+"&telefone="+telefone+"&id="+idEditar;
+                  try {
+                      URL url = new URL(stringURL);
+                      urlConnection = (HttpURLConnection) url.openConnection();
+
+                      urlConnection.setDoOutput(true);
+
+                      in = new BufferedReader(new InputStreamReader(
+                              urlConnection.getInputStream()));
+
+                      String response = "";
+                      String inputLine;
+
+                      while ((inputLine = in.readLine()) != null)
+                          response += inputLine;
+
+                      Log.d( "AndroidJSON", response );
+
+                      runOnUiThread(new Runnable() {
+
+                          @Override
+                          public void run() {
+                              for( Contato contato: listaContatos ){
+
+                                  if( contato.getId() == idEditar ){
+                                      contato.setNome( nome );
+                                      contato.setEndereco( endereco );
+                                      contato.setTelefone( telefone );
+                                  }
+                              }
+
+                              adapter.notifyDataSetChanged();
+                          }
+                      });
+                  } catch( MalformedURLException ex ){
+                      ex.printStackTrace();
+                  } catch( IOException ex ){
+                      ex.printStackTrace();
+                  }
               }
-          }
+          }.start();
 
-          adapter.notifyDataSetChanged();
 
       } //Retorno da tela de contatos com um conteudo para ser adicionado
         //Na segunda tela, o usuario clicou no botão ADD
